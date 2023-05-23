@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #111;
+    height: 100vh;
+    color: #ffff;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.container2 {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.head {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.head h1 {
+    font-size: 35px;
+    color: #111;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(84, 228, 180);
+    text-transform: uppercase;
+    font-family: Times, serif;
+    letter-spacing: 2px;
+}
+
+.head p {
+    font-size: 25px;
+}
+
+input {
+    width: 80%;
+    margin: 4px;
+    padding: 15px;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #070707;
+    color: aliceblue;
+}
+
+input:focus {
+    transform: scale(1.1);
+    background-color: #000000c4;
+    color: aliceblue;
+}
+
+#total {
+    background-color: rgb(143, 16, 16);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#total::before {
+    text-transform: capitalize;
+    content: "total: ";
+}
+
+.inputs2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    /* width: 50%; */
+    padding: 8px 20px;
+    margin-top: 10px;
+    background-color: rgba(255, 4, 4, 0.336);
+    border: none;
+    color: aliceblue;
+    border-radius: 20px;
+    text-transform: capitalize;
+}
+
+button:hover {
+    background-color: rgba(255, 4, 4, 0.575);
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    transition: .44s;
+}
+
+#create {
+    width: 100%;
+}
+
+#search {
+    margin: 10px;
+    width: 30%;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+
+}
+
+th {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    padding: 5px;
+}
+
+td {
+    padding-bottom: 6px;
+    border-bottom: 2px solid;
+}
+
+#Color {
+    width: 50%;
+    position: relative;
+    top: 15px;
+}
+
+#deleteAll {
+    width: 80%;
+    margin-top: -2px;
+    margin-bottom: 20px;
+}

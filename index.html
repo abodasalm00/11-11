@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="pharaoh.png" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>crud</h1>
+            <p>control of service</p>
+        </div>
+        <!-- inputs -->
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title" />
+            <div class="inputs2">
+                <input onkeyup="priceDAta()" type="number" id="price" placeholder="price" />
+                <input onkeyup="priceDAta()" type="number" id="taxes" placeholder="taxes" />
+                <input onkeyup="priceDAta()" type="number" id="discount" placeholder="discount" />
+                <small id="total"></small>
+            </div>
+            <input type="number" id="range" placeholder="count" />
+            <button id="create">create</button>
+            <div class="input-search">
+                <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search" />
+            </div>
+            <button id="deleteAll">delete All</button>
+        </div>
+    </div>
+    <div class="container2">
+        <!-- tables -->
+        <div class="tables">
+            <table>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>update</th>
+                <th>delete</th>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
